@@ -1,0 +1,145 @@
+.whyus {
+  /* Advanced Gradient Background with Top Blending */
+  background:
+    radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.25) 0%, transparent 60%),
+    linear-gradient(to bottom, #020617 0%, #050a14 100%);
+  padding: 60px 0;
+  /* Reduced from 80px */
+  position: relative;
+  overflow: hidden;
+  /* Top fade mask to remove sharp edge (60px matches padding) */
+  mask-image: linear-gradient(to bottom, transparent 0%, black 60px, black 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 60px, black 100%);
+}
+
+.whyus-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+.whyus-header {
+  text-align: center;
+  max-width: 700px;
+  /* Reduced width */
+  margin: 0 auto 50px;
+}
+
+.whyus-label {
+  color: #38bdf8;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.whyus-header h2 {
+  color: #ffffff;
+  font-size: 36px;
+  /* Reduced from 42px */
+  font-weight: 800;
+  margin: 0 0 20px;
+}
+
+.whyus-highlight {
+  color: #38bdf8;
+}
+
+/* Divider under title */
+.whyus-divider {
+  width: 80px;
+  height: 3px;
+  background: #cbd5e1;
+  margin: 0 auto 32px;
+  border-radius: 2px;
+  opacity: 0.3;
+}
+
+.whyus-header p {
+  color: #94a3b8;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Grid */
+.whyus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Card */
+.whyus-card {
+  background: rgba(11, 22, 41, 0.6);
+  /* Semi-transparent dark blue */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(30, 41, 59, 0.5);
+  border-radius: 16px;
+  padding: 32px 28px;
+  transition: all 0.3s ease;
+  min-height: 240px;
+  /* Uniform height */
+}
+
+.whyus-card:hover {
+  background: rgba(15, 23, 42, 0.8);
+  border-color: rgba(56, 189, 248, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon */
+.whyus-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.whyus-icon .material-symbols-outlined {
+  font-size: 24px;
+  color: #38bdf8;
+}
+
+.whyus-card h3 {
+  color: #38bdf8;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.whyus-card p {
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .whyus-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .whyus {
+    padding: 60px 0;
+  }
+
+  .whyus-header h2 {
+    font-size: 32px;
+  }
+
+  .whyus-grid {
+    grid-template-columns: 1fr;
+  }
+}

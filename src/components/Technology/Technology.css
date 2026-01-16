@@ -1,0 +1,78 @@
+.technology {
+  background-color: #070a13;
+  padding: 60px 0;
+}
+
+
+.technology-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.technology-header h2 {
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.technology-header p {
+  color: #94a3b8;
+  font-size: 15px;
+}
+
+.technology-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.technology-group h3 {
+  color: #e5e7eb;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.technology-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.technology-tag {
+  background-color: #0b1220;
+  border: 1px solid #1e293b;
+  color: #cbd5e1;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: default;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.technology-tag i {
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.technology-tag:hover {
+  background-color: #111827;
+  border-color: #2563eb;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+@media (max-width: 650px) {
+  .technology {
+    padding: 50px 0;
+  }
+
+  .technology-header {
+    margin: 0 auto 40px;
+  }
+}
