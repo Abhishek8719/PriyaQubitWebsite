@@ -1,6 +1,7 @@
 # PriyaQubit Website
 A modern, scalable web application built with React and Vite, featuring a clean MVC architecture for maintainability and extensibility.
-![Uploading image.png…]()
+<img width="1920" height="1080" alt="Screenshot (461)" src="https://github.com/user-attachments/assets/159a9fd1-b147-408e-b2f1-d764d51e4c41" />
+
 
 ## 🚀 Features
 
